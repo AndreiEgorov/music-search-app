@@ -4,8 +4,6 @@
     <form action="" @submit.prevent="submit">
       <input placeholder="Enter Artist Name" v-model="search" autofocus/>
     </form>
-    <!--<p>{{// $route.params.id}}</p>-->
-    <p> AM I HERE?</p>
   </div>
 </template>
 
