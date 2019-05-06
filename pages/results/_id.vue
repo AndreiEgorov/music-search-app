@@ -23,6 +23,7 @@
 
   export default {
     middleware: "search",
+    layout: 'dark',
     components: {
       Card
     },
