@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <ToolBar/>
-      <!--<nuxt-child/>-->
+      <nuxt/>
     </div>
   </section>
 </template>

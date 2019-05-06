@@ -1,15 +1,11 @@
 <template>
   <div>
     <h1> Search iTunes</h1>
-    <div>
-      <p>safasdpfiuafasbdfpaiughfpiasudfbaskjdfbapidfbafdjnasdfjasdf;ajsdfa;ksdfjnas;dkfjnasdfasdf
-
-      </p>
-    </div>
-
-    <!--<form action="">-->
-      <!--<input placeholder="Enter Artist Name" v-model="search" autofocus>-->
-    <!--</form>-->
+    <form action="" @submit.prevent="submit">
+      <input placeholder="Enter Artist Name" v-model="search" autofocus/>
+    </form>
+    <!--<p>{{// $route.params.id}}</p>-->
+    <p> AM I HERE?</p>
   </div>
 </template>
 
@@ -21,9 +17,22 @@
       return {
         search: ""
       }
+    },
+    methods:{
+      submit(e){
+        console.log("THIS", this)
+
+        //will redirect to the "results/id" route
+        this.$router.push(`results/${this.search}`)
+      }
     }
   }
 </script>
-<style>
-
+<style scoped>
+* {
+  text-align: center;
+}
+  h1{
+    padding: 20px
+  }
 </style>
